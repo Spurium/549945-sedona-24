@@ -6,72 +6,78 @@
   </head>
  <body>
     <header class="main-header">
-      <nav class="main-navigation">
-         <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="68" height="53" alt="Логотип «City of Sedona»">
-          </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo_video.html">Фото и видео</a></li>
-          <li><a href="state_map.html">Карта Штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+     <nav class="main-nav">
+       <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="info.html">Информация</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo_video.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="state_map.html">Карта Штата</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="hotels.html">Гостиницы</a></li>
         </ul>
+        <a class="main-header__logo">
+          <img class="main-header__main-img" src="img/index-logo.svg" width="68" height="53" alt="Логотип «City of Sedona»">
+          </a>
       </nav>
     </header>
 <main class="container">
-	<h1 class="visually-hidden">
+	<section class="intro">
+		<img class="intro__img" src="img/index-welcome.svg" alt="Welcome">
+	<h1 class="intro__header visually-hidden">
     		Добро пожаловать в Седону.
     	</h1>
-    	<section>
-    		<h2 class="reasons">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-    		<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-    		<ol class="reasons-list">
-    			<li class="reasons-item">
+    		<h2 class=intro__header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+    		<p class="intro__content">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    	</section>
+    	<section class="reasons">
+    			<div class="reasons__item reasons__item--blue">
     				<h3>Настоящий городок</h3>
     				<p>Седона - не аттракцион для турисотов, там течет своя жизнь</p>
+    			</div>
+    		    <div class="reasons__item reasons__item--img">
     				<img src="img/index-1.svg" width="800" height="260" alt="Sedona">
-    				<ul class="advice">
-    					<li class="advice-item">
+    			</div>
+    					<div class="reasons__advice reasons__item--house">
     						<h4>Жильё</h4>
     						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-    					</li>
-    					<li class="advice-item">
+    					</div>
+    					<div class="reasons__advice reasons__item--food">
     						<h4>Еда</h4>
     						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-    					</li>
-    					<li class="advice-item">
+    					</div>
+    					<div class="reasons__advice reasons__item--souvenir">
     						<h4>Сувениры</h4>
     						<p>Не только китайского, но и местного производства!</p>
-    					</li>
-    				<ul>
-    		    </li>
-    		    <li class="reasons-item">
+    					</div>
+    		    <div class="reasons__item reasons__item--blue">
     		   	<h3>Там есть мост Дъявола
     		   	</h3>
-    		   	<img src="img/index-2.svg" width="800" height="260" alt="Bridge">
     		   	<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-    		    </li>
-    		    <li class="reasons-item">
+    		   </div>
+    		   	<div class="reasons__item reasons__item--img">
+    		   	<img src="img/index-2.svg" width="800" height="260" alt="Bridge">
+    		   	</div>
+    		   <div class="reasons__item reasons__item--gray">
     		   	<h3>Небольшая площадь
     		   	</h3>
     		   	<p>Все достопримечательности находятся очень близко</p>
-    		    </li>
-    		    <li class="reasons-item">
+    		   </div>
+    		  <div class="reasons__item reasons__item--gray">
     		   	<h3>Красивая дорога
     		   	</h3>
     		   	<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-    		    </li>
-    		    <li class="reasons-item">
+    		   </div>
+    		    <div class="reasons__item reasons__item--gray">
     		   	<h3>Мало туристов
     		   	</h3>
     		   	<p>Большинство едет в Гранд Коньон и толпится там</p>
-    		    </li>
-    		</ol>
+    		  </div>
+    	</section>
+    	<section class="search">
+    		<h2 class="search__header">Заинтересовались?</h2>
+    		<p class="search__content">Укажите предполагаемые даты поездки и мы покажем вам лучшее предложения гостиниц в Седоне</p>
+    		<button class="search__btn">Найти Гостиницу</button>
     	</section>
     	<section class="map">
-    		<h2>Заинтересовались?</h2>
-    		<p>Укажите предполагаемые даты поездки и мы покажем вам лучшее предложения гостиниц в Седоне</p>
-    		<p><img src="images/map.gif" width="1200" height="478" usemap="#map" alt="Навигация"></p>
+    		<p><img  src="images/map.gif" width="1200" height="478" usemap="#map" alt="Навигация"></p>
     	    <p><map name="map">
     <area shape="poly" alt="Гостиница 1" 
     coords="#" 
@@ -81,16 +87,16 @@
     	</section>
 </main>
  <footer class="main-footer">
- 	<p class="footer-visit">#VisitSedona</p>
- 	<ul class="footer-social">
-    		<li><a href="#" class="social-button">Твитер</a></li>
-    		<li><a href="#" class="social-button">Фейсбук</a>
-    		</li>
-    		<li><a href="#" class="social-button">Ютуб</a> </li>
+ 	<p class="main-footer__visit">#VisitSedona</p>
+ 	<div class="main-footer__social">
+ 		<ul class="social-list">
+    		<li class="social-list__item"><a class="social-list__link" href="#" class="social-button">Твитер</a></li>
+    		<li class="social-list__item"><a class="social-list__link" href="#" class="social-button">Фейсбук</a></li>
+    		<li class="social-list__item"><a class="social-list__link" href="#" class="social-button">Ютуб</a> </li>
     	</ul>
-    	<p class="footer-copyright">
-    		<b>Website by</b>
-    		<a href="https://htmlacademy.ru" class="button"> HTML Academy</a>
+    </div>
+    	<p class="main-footer__copyright">
+    		<a class="main-footer__copyright-link" href="https://htmlacademy.ru"> <b>Website by</b> HTML Academy</a>
     	</p>
  </footer>
   </body>
